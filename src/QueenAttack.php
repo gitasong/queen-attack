@@ -2,7 +2,7 @@
 
     class QueenAttack
     {
-        function attackEnemy($queen_x, $queen_y, $other_x, $other_y)
+        function attackOpponent($queen_x, $queen_y, $other_x, $other_y)
         {
             $x_plus = $queen_x + 1;
             $y_plus = $queen_y + 1;
