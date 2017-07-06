@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Queen Attack!</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1>Queen Attack!</h1>
+                <h2>Can you survive the Queen?</h2>
+            </div>
+            <div class="container main">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form name="input-form" action="/calc-score" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="queen">Queen: </label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="queen_x">x coord: </label>
+                                                <input type="number" name="queen_x" required></input>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="queen_y">y coord: </label>
+                                                <input type="number" name="queen_x" required></input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="opponent">Opponent: </label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="other_x">x coord: </label>
+                                                <input type="number" name="other_x" required></input>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="other_y">y coord: </label>
+                                                <input type="number" name="other_y" required></input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button type="submit" name="attack" class="btn btn-primary">Attack!</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
