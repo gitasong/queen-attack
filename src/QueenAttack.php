@@ -10,7 +10,7 @@
             $y_minus = $queen_y - 1;
 
             if (($other_x == $queen_x) ||
-            ((($other_y == $y_plus) || ($other_y == $y_minus)) && ($other_x == $queen_x)) ||
+            ($other_y == $queen_y) ||
             (($other_x == $x_minus) && ($other_y == $y_minus)) ||
             (($other_x == $x_plus) && ($other_y == $y_plus)) ||
             (($other_x == $x_minus) && ($other_y == $y_plus)) ||
