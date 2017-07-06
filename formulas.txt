@@ -37,3 +37,19 @@ if (($other_x == $queen_x) ||
 (($other_x == $x_plus) && ($other_y == $y_plus)) ||
 (($other_x == $x_minus) && ($other_y == $y_plus)) ||
 (($other_x == $x_plus) && ($other_y == $y_minus)))
+
+RE-FACTOR TO INCLUDE NW TO SE AND SE TO NW DIAGONAL:
+
+if (($other_x == $queen_x) ||
+($other_y == $queen_y) ||
+(abs($queen_x - $other_x) == abs($queen_y - $other_y)) ||
+(($other_x == $x_minus) && ($other_y == $y_plus)) ||
+(($other_x == $x_plus) && ($other_y == $y_minus)))
+
+RE-FACTOR TO INCLUDE NE TO SW AND SW TO NE DIAGONAL:
+
+if (($other_x == $queen_x) ||
+($other_y == $queen_y) ||
+(abs($queen_x - $other_x) == abs($queen_y - $other_y)) ||
+(($queen_x + $other_x) == ($queen_y - $other_y)) ||
+(($queen_x - $other_x) == ($queen_y + $other_y)))
