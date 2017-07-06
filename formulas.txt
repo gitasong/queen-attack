@@ -1,0 +1,6 @@
+if (other_x == (queen_x + 1 || queen_x - 1)) ||
+((other_y) == (queen_y + 1 || queen_y - 1)) ||
+((other_x == queen_x - 1) && (other_y == queen_y - 1)) ||
+((other_x == queen_x + 1) && (other_y == queen_y + 1)) ||
+((other_x == queen_x - 1) && (other_y == queen_y + 1)) ||
+((other_x == queen_x + 1) && (other_y == queen_y - 1))
