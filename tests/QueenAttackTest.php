@@ -13,7 +13,7 @@
             $other_y = 5;
 
             // Act
-            $result = $test_queenAttack->attackAdjacent($queen_x, $queen_y, $other_x, $other_y);
+            $result = $test_queenAttack->attackEnemy($queen_x, $queen_y, $other_x, $other_y);
 
             // Assert
             $this->assertEquals("can attack", $result);
@@ -29,7 +29,7 @@
             $other_y = 8;
 
             // Act
-            $result = $test_queenAttack->attackAdjacent($queen_x, $queen_y, $other_x, $other_y);
+            $result = $test_queenAttack->attackEnemy($queen_x, $queen_y, $other_x, $other_y);
 
             // Assert
             $this->assertEquals("can attack", $result);
@@ -45,7 +45,7 @@
             $other_y = 4;
 
             // Act
-            $result = $test_queenAttack->attackAdjacent($queen_x, $queen_y, $other_x, $other_y);
+            $result = $test_queenAttack->attackEnemy($queen_x, $queen_y, $other_x, $other_y);
 
             // Assert
             $this->assertEquals("can attack", $result);
